@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --deep-space-sparkle: #476a6fff;
+    --carrot-orange: #ed9b40ff;
+    --xiketic: #0e0004ff;
+    --vivid-sky-blue: #5bc3ebff;
+    --french-raspberry: #ba3b46ff;
+    --white: #ffffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--xiketic);
+    font-family: 'Space Grotesk', sans-serif;
+    color: var(--white);
+}
+
+h1 {
+    margin: 0;
+    padding: 0.25em;
+    background-color: var(--carrot-orange);
+    line-height: 5vh;
+    text-align: center;
+    color: var(--xiketic);
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5vw;
+    width: 80vh;
+    margin: 5vh auto;
+}
+
+#board span {
+    display: block;
+    width: 15vh;
+    height: 15vh;
+    background-color: var(--white);
+    border-radius: 1vh;
+    line-height: 15vh;
+    text-align: center;
+    font-size: 5vh;
+}
+
+#board span.closed::before {
+    content: "❓";
+}
+
+#board span.open {
+    background-color: var(--french-raspberry);
+}
+
+#board span.solved {
+    opacity: 0.5;
+}
+
+#board span:not(.solved):hover {
+   cursor: pointer;
+}
+
+#board span.skunk:not(.closed)::before {
+    content: '🦨'; 
+}
+
+#board span.duck:not(.closed)::before {
+    content: '🦆'; 
+}
+
+#board span.tortoise:not(.closed)::before {
+    content: '🐢'; 
+}
+
+#board span.whale:not(.closed)::before {
+    content: '🐳'; 
+}
+
+#board span.bee:not(.closed)::before {
+    content: '🐝'; 
+}
+
+#board span.parrot:not(.closed)::before {
+    content: '🦜'; 
+}
+
+#board span.rat:not(.closed)::before {
+    content: '🐀'; 
+}
+
+#board span.kangaroo:not(.closed)::before {
+    content: '🦘'; 
+}

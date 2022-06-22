@@ -1,0 +1,11 @@
+{
+  "name": "mme-memoji",
+  "version": "0.0.1",
+  "description": "A simple memory game based on emojis",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Bazo <alexanderbazo@googlemail.com>",
+  "license": "MIT"
+}
